@@ -5,6 +5,20 @@
     text-decoration: none;
     list-style-type: none;
 }
+
+
+.customicon-left{    
+    border-width: 0;
+    float: left;
+    
+}
+  
+.customicon-right{
+    float: right;
+    width: auto;
+    padding-left: 5px;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     background:url("images/ship.png");
