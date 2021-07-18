@@ -106,7 +106,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="book-now-button" class="btn-style">Book Now</button>
         </div>
     </main>
 
@@ -128,6 +128,16 @@
         
         document.getElementById('economic-decrease').addEventListener('click', function(){
             ticketUpdateHandler('economic', false);
+        })
+
+        document.getElementById('book-now-button').addEventListener('click', function(){
+            alert('Ticket Booked Successfully!');
+            document.getElementById('firstclass-input').value = "0";
+            document.getElementById('economic-input').value = "0";
+            document.getElementById('sub-total').innerText = "500";
+            document.getElementById('total-vat').innerText = "50";
+            document.getElementById('grand-total').innerText = "550";
+
         })
         
         
